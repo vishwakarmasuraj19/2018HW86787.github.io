@@ -1,0 +1,239 @@
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- css style starts here -->
+   
+    <!-- css style ends here -->
+  </head>
+  <div class="contOut clearfix">
+    <div class="contIn">
+      <div class="section top clearfix">
+        <div class="logoCont">
+          <img
+            class="logo"
+            src="PPhoto.jpg"/>
+        </div>
+        <h2>Suraj Vishwakarma</h2>
+        <div class="moreInfo">
+          <p>
+            506, Vrindavan dham<br />Ulhasnagar<br />Maharashtra<br />
+            +91-7719802707<br /><a href="http://onelittledesigner.com" target="_blank"></a>
+          </p>
+        </div>
+        <p class="tagline">
+          Wintel Admin<br />
+        </p>
+      </div>
+      <div class="divider"></div>
+    </div>
+  </div>
+  <div class="contOut clearfix">
+    <div class="contIn">
+      <div class="section middle clearfix">
+        <div class="job">
+          <h2>
+            Career Profile<span>April, 2019 - present </span>
+          </h2>
+          <p>
+            <strong>Position: </strong>Wintel Admin<br /><strong
+              >Description: </strong
+            >I am working as a Wintel Admin on techologies VMware and hyper-V
+            <br /><span class="brag" >I am working with Build team responsible for creating new Virtual machines on VMware and hyper-V, maintaining them, performing installation and configurations of Windows server 2016 and 2019 on Dell and HP blades.</span>
+          </p>	
+        </div>
+      </div>
+      <div class="divider"></div>
+    </div>
+  </div>
+  <div class="contOut clearfix">
+    <div class="contIn">
+      <div class="section middle clearfix">
+        <div class="job">
+          <h2>
+            Experience Summary<span>2019 - present </span>
+          </h2>
+          <p>
+            <strong>Position: </strong>Wintel Administrator<br /><strong
+              >Description: </strong >Windows 2012, 2016 and 2019 support, Server build, Vmware admin, Hyper-V, Dell and HP blades remote support.
+            <br /><ul>
+                <li>Brief knowledge on virtualization technologies.</li>
+               <li>HandsOn experience on Windows server troubleshooting.</li>    
+               <li>Working on VM build, post build customizations, configurations, troubleshooting on VMware and Hyper-V virtualization technologies.</li>
+               <li>Performing decommissioning of VMs.</li>
+               <li>Collaborating with Local-IT for tasks like server shutdown, getting maintainance window during hardware replacement activities</li>
+               <li>HandsOn experience in installation and configurations of Hyper-V standalone hosts and S2D clustered nodes on Dell blades</li>
+               <li>HandsOn experience in installation and configurations of VMware ESXi hosts Dell blades</li> 
+	       <li>HandsOn experience Active directory DNS</li>    
+               </ul> 
+              
+          </p>
+        </div>
+      </div>
+      <div class="divider"></div>
+    </div>
+  </div>
+  <div class="contOut clearfix">
+    <div class="contIn">
+      <div class="section middle clearfix">
+        <div class="job">
+          <h2>Skills<span>2019 - 2020 </span></h2>
+          <p>
+            <strong>Position: </strong>Wintel Administratorr<br /><strong>Description: </strong>Windows Administration, Vmware Administration, Hyper-V, Active directory
+    <br />
+    <ul><li>Excellent verbal, interpersonal, and written communication skills</li>
+
+<li>Team player with the ability to work in a fast-paced environment</li>
+<li>Strong analytical, problem-solving and decision making capabilities</li>
+<li>Create new VMs and install OS as per requirement</li>
+<li>Understand both virtual and hardware servers</li>
+<li>Managing VMware and hyper-V virtualization</li>
+<li>Troubleshooting Windows servers</li>
+<li>Managing DELL iDRAC</li>
+<li>Managing HPE iLO</li>
+<li>Performing hardware parts replacement activities</li>
+<li> Work with notifications through e-mail and text message</li>
+<li>ServiceNow ITSP tool</li>
+<li>DMZ, Internet facing servers configurations</li>
+
+</ul>
+          </p>
+        </div>
+      </div>
+      <div class="divider"></div>
+    </div>
+  </div>
+  <div class="contOut clearfix">
+    <div class="contIn">
+      <div class="section middle clearfix">
+        <div class="job">
+          <h2>
+            Academic summary<span>2013 - 2018 </span>
+          </h2>
+          <p>
+              <span class="brag">BSc. Information Technology | Mumbai University</br>     
+               HSC Science | RJ college, Ghatkopar, Mumbai</br> 
+              </span>
+          </p>
+        </div>
+      </div>
+      <div class="divider"></div>
+    </div>
+  </div>
+  <div class="contOut clearfix half">
+    <div class="contIn">
+      <div class="section middle clearfix">
+        <h2>
+          Contact now
+        </h2>
+        <div id="error_message">
+     
+        </div>
+        <form action="" id="myform" onsubmit = "return validate();">
+          <div class="input_field">
+              <input type="text" placeholder="Name" id="name">
+          </div>
+          <div class="input_field">
+              <input type="text" placeholder="Address" id="subject">
+          </div>
+          <div class="input_field">
+              <input type="text" placeholder="Phone" id="phone">
+          </div>
+          <div class="input_field">
+              <input type="text" placeholder="Email" id="email">
+          </div>
+          <div class="input_field">
+              <textarea placeholder="Message" id="message"></textarea>
+          </div>
+          <div class="btn">
+              <input type="submit">
+          </div>
+        </form>
+      </div>
+      <div class="divider"></div>
+    </div>
+  </div>
+  <!-- jquery starts here -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script>
+    $(window).load(function () {
+      // Page Load Anim
+      $(".contOut").animate(
+        {
+          opacity: "1",
+        },
+        1200
+      );
+      // Jobs Accordion
+      $(".fa-plus").closest(".job").find("p").slideUp();
+      $(".openBtn").on("click", function () {
+        if ($(this).hasClass("open")) {
+          $(this)
+            .removeClass("open")
+            .removeClass("fa-minus")
+            .addClass("fa-plus");
+          $(this)
+            .closest(".job")
+            .find("p")
+            .animate(
+              {
+                opacity: "0",
+              },
+              200
+            )
+            .slideUp();
+        } else {
+          $(this).addClass("open").removeClass("fa-plus").addClass("fa-minus");
+          $(this).closest(".job").find("p").slideDown().animate(
+            {
+              opacity: "1",
+            },
+            400
+          );
+        }
+      });
+    });
+  </script>
+
+  <script>
+    function validate(){
+  var name = document.getElementById("name").value;
+  var subject = document.getElementById("subject").value;
+  var phone = document.getElementById("phone").value;
+  var email = document.getElementById("email").value;
+  var message = document.getElementById("message").value;
+  var error_message = document.getElementById("error_message");
+  
+  error_message.style.padding = "10px";
+  
+  var text;
+  if(name.length < 3){
+    text = "Please Enter valid Name";
+    error_message.innerHTML = text;
+    return false;
+  }
+  if(subject.length < 10){
+    text = "Please Enter more than 10 Characters in address";
+    error_message.innerHTML = text;
+    return false;
+  }
+  if(isNaN(phone) || phone.length != 10){
+    text = "Please Enter valid Phone Number";
+    error_message.innerHTML = text;
+    return false;
+  }
+  if(email.indexOf("@") == -1 || email.length < 6){
+    text = "Please Enter valid Email";
+    error_message.innerHTML = text;
+    return false;
+  }
+  if(message.length <= 140){
+    text = "Please Enter More Than 140 Characters in message";
+    error_message.innerHTML = text;
+    return false;
+  }
+  alert("Thankyou!");
+  return true;
+}
+  </script>
+  <!-- jquery ends here -->
+</html>
